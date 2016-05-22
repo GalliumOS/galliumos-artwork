@@ -1,3 +1,9 @@
+galliumos-artwork (1.91) xenon; urgency=medium
+
+  * fix Replaces configs
+
+ -- reynhout <reynhout@galliumos.org>  Sun, 22 May 2016 18:46:50 +0000
+
 galliumos-artwork (1.9) xenon; urgency=medium
 
   * migrate GalliumOS assets from xubuntu-artwork package
