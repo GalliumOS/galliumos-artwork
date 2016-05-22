@@ -1,0 +1,7 @@
+galliumos-artwork (1.9) xenon; urgency=medium
+
+  * migrate GalliumOS assets from xubuntu-artwork package
+    - still 1.0 assets, but updated for xubuntu-artwork_16.04.2
+
+ -- reynhout <reynhout@galliumos.org>  Sun, 22 May 2016 16:57:35 +0000
+

@@ -1,0 +1,47 @@
+Source: galliumos-artwork
+Section: x11
+Priority: optional
+Maintainer: GalliumOS Developers <contact@galliumos.org>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.6
+
+Package: galliumos-artwork
+Architecture: all
+Depends: ${misc:Depends}, xubuntu-artwork, galliumos-wallpapers, 
+ plymouth-theme-galliumos-logo, plymouth-theme-galliumos-text
+Description: GalliumOS themes and artwork
+ This package contains GalliumOS themes and artwork.
+
+Package: galliumos-wallpapers
+Architecture: all
+Depends: ${misc:Depends}
+Description: GalliumOS wallpapers
+ This package contains the default wallpapers for GalliumOS.
+
+Package: plymouth-theme-galliumos-logo
+Architecture: all
+Depends: ${misc:Depends}, plymouth, plymouth-label, plymouth-theme-xubuntu-logo
+Replaces: plymouth-theme-xubuntu-logo
+Provides: plymouth-theme
+Breaks: plymouth (<< 0.9.2-3ubuntu1~),
+Description: graphical boot animation and logger - galliumos-logo theme
+ Plymouth is an application that runs very early in the boot process
+ (even before the root filesystem is mounted!) that provides a graphical
+ boot animation while the boot process happens in the background.
+ .
+ This package contains the default galliumos-logo theme.
+
+Package: plymouth-theme-galliumos-text
+Architecture: all
+Depends: ${misc:Depends}, plymouth, plymouth-theme-ubuntu-text, plymouth-theme-xubuntu-text
+Replaces: plymouth-theme-xubuntu-text
+Provides: plymouth-theme
+Breaks: plymouth (<< 0.9.2-3ubuntu1~),
+Description: graphical boot animation and logger - galliumos-text theme
+ Plymouth is an application that runs very early in the boot process
+ (even before the root filesystem is mounted!) that provides a graphical
+ boot animation while the boot process happens in the background.
+ .
+ This package contains the default galliumos-text theme used when no support for
+ a graphical theme is found on your system.
+
