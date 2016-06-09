@@ -17,6 +17,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
  * Written by: Mad Nick <dr.madnick@gmail.com>
+ * GalliumOS Animation by: David Muckle <dvdmuckle@galliumos.org>
  *
  **************************************************************************/
 
@@ -42,7 +43,6 @@ bpp = Window.GetBitsPerPixel();
 
 if (bpp == 4) {
 
-	logotype_image = Image("logo_16bit.png");
 	progress_meter_image = Image("progress-meter_16bit.png");
 	progress_fade_image = Image("progress-fade_16bit.png");
 	fsck_progress_meter_image = Image("progress-meter_16bit.png");
@@ -51,13 +51,23 @@ if (bpp == 4) {
 }
 else {
 
-	logotype_image = Image("logo.png");
 	progress_meter_image = Image("progress-meter.png");
 	progress_fade_image = Image("progress-fade.png");
 	fsck_progress_meter_image = Image("progress-meter.png");
 	fsck_progress_fade_image = Image("fsck-fade.png");
 	
 }
+/* Animated Logo */
+indexnum = 1;
+while (1){
+    frame_image[indexnum] = ImageNew("logo-white-animated"+ indexnum +".png");
+    if (!frame_image[indexnum]) break;
+    indexnum++;
+}
+frame_count = indexnum + 1;
+frame_index = 1;
+galliumos_sprite = SpriteNew();
+
 
 /**/
 
@@ -84,7 +94,6 @@ background_sprite = Sprite(scaled);
 background_sprite.SetX(screen_x + screen_width / 2 - scaled.GetWidth() / 2);
 background_sprite.SetY(screen_y + screen_height / 2 - scaled.GetHeight() / 2);
 
-logotype_sprite = Sprite(logotype_image);
 
 fsck_progress_meter_sprite = Sprite(fsck_progress_meter_image);
 fsck_progress_fade_sprite = Sprite(fsck_progress_fade_image.Scale(1, fsck_progress_fade_image.GetHeight()));
@@ -136,7 +145,7 @@ fun debugOutput(str) {
 
 /*
  * Setup the graphics properties */
-logotype_sprite.SetPosition(screen_x + (screen_width / 2) - (logotype_image.GetWidth() / 2), screen_y + (screen_height / 2) - (logotype_image.GetHeight() / 2));
+galliumos_sprite.SetPosition(screen_x + (screen_width / 2) - (logotype_image.GetWidth() / 2), screen_y + (screen_height / 2) - (logotype_image.GetHeight() / 2));
 fsck_progress_meter_sprite.SetPosition(screen_x + (screen_width / 2) - (progress_meter_image.GetWidth() / 2), screen_y + (screen_height / 2) + (logotype_image.GetHeight() / 2) + 25);
 fsck_progress_fade_sprite.SetPosition(screen_x + (screen_width / 2) - (progress_meter_image.GetWidth() / 2), screen_y + (screen_height / 2) + (logotype_image.GetHeight() / 2) + 25);
 fsck_progress_meter_sprite.SetOpacity(0);
@@ -179,6 +188,8 @@ fun atoi(str) {
  * the screen is not updated correctly */
 
 fun refreshHandler() {
+
+galliumos_sprite.SetPosition(screen_x + (screen_width / 2) - (logotype_image.GetWidth() / 2), screen_y + (screen_height / 2) - (logotype_image.GetHeight() / 2));
 	
 	if (fade_dir == 0) {
 		
