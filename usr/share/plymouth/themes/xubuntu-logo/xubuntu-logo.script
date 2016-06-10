@@ -63,8 +63,8 @@ while (1){
         for (i = 0; i <= 2; i++) {
         // Do nothing
         }
-    frame_image[indexnum] = ImageNew("logo-white-animated"+ indexnum +".png");
-    if (!frame_image[indexnum]) break;
+    galliumos_image[indexnum] = ImageNew("logo-white-animated"+ indexnum +".png");
+    if (!galliumos_image[indexnum]) break;
     indexnum++;
 }
 frame_count = indexnum + 1;
@@ -148,12 +148,12 @@ fun debugOutput(str) {
 
 /*
  * Setup the graphics properties */
-galliumos_sprite.SetPosition(screen_x + (screen_width / 2) - (logotype_image.GetWidth() / 2), screen_y + (screen_height / 2) - (logotype_image.GetHeight() / 2));
-fsck_progress_meter_sprite.SetPosition(screen_x + (screen_width / 2) - (progress_meter_image.GetWidth() / 2), screen_y + (screen_height / 2) + (logotype_image.GetHeight() / 2) + 25);
-fsck_progress_fade_sprite.SetPosition(screen_x + (screen_width / 2) - (progress_meter_image.GetWidth() / 2), screen_y + (screen_height / 2) + (logotype_image.GetHeight() / 2) + 25);
+galliumos_sprite.SetPosition(screen_x + (screen_width / 2) - (galliumos_image.GetWidth() / 2), screen_y + (screen_height / 2) - (galliumos_image.GetHeight() / 2));
+fsck_progress_meter_sprite.SetPosition(screen_x + (screen_width / 2) - (progress_meter_image.GetWidth() / 2), screen_y + (screen_height / 2) + (galliumos_image.GetHeight() / 2) + 25);
+fsck_progress_fade_sprite.SetPosition(screen_x + (screen_width / 2) - (progress_meter_image.GetWidth() / 2), screen_y + (screen_height / 2) + (galliumos_image.GetHeight() / 2) + 25);
 fsck_progress_meter_sprite.SetOpacity(0);
 fsck_progress_fade_sprite.SetOpacity(0);
-passw_dialog_input_sprite.SetPosition(screen_x + (screen_width / 2) - (passw_dialog_input_image.GetWidth() / 2), screen_y + (screen_height / 2) + (logotype_image.GetHeight() / 2) + 70);
+passw_dialog_input_sprite.SetPosition(screen_x + (screen_width / 2) - (passw_dialog_input_image.GetWidth() / 2), screen_y + (screen_height / 2) + (galliumos_image.GetHeight() / 2) + 70);
 passw_dialog_input_sprite.SetOpacity(0);
 passw_lbl_sprite.SetOpacity(0);
 
@@ -191,8 +191,8 @@ fun atoi(str) {
  * the screen is not updated correctly */
 
 fun refreshHandler() {
-SpriteSetImage (galliumos_sprite, frame_image[int_frame_index]);
-galliumos_sprite.SetPosition(screen_x + (screen_width / 2) - (logotype_image.GetWidth() / 2), screen_y + (screen_height / 2) - (logotype_image.GetHeight() / 2));
+SpriteSetImage (galliumos_sprite, galliumos_image[int_frame_index]);
+galliumos_sprite.SetPosition(screen_x + (screen_width / 2) - (galliumos_image.GetWidth() / 2), screen_y + (screen_height / 2) - (galliumos_image.GetHeight() / 2));
 
 	if (fade_dir == 0) {
 
@@ -257,7 +257,7 @@ fun showPasswordHandler(prompt, stars) {
 	tmp_prompt_image = Image.Text(prompt, 1, 1, 1);
 
 	passw_lbl_sprite.SetImage(tmp_prompt_image);
-	passw_lbl_sprite.SetPosition(screen_x + (screen_width / 2) - (tmp_prompt_image.GetWidth() / 2), screen_y + (screen_height / 2) + (logotype_image.GetHeight() / 2) + 50);
+	passw_lbl_sprite.SetPosition(screen_x + (screen_width / 2) - (tmp_prompt_image.GetWidth() / 2), screen_y + (screen_height / 2) + (galliumos_image.GetHeight() / 2) + 50);
 
 	for(i = 0; i < stars_n; i++)  {
 
@@ -270,7 +270,7 @@ fun showPasswordHandler(prompt, stars) {
 	for(i = 0; (i < stars) && (i < 15); i++) {
 
 		stars_array[i] = Sprite(bullet_image);
-		stars_array[i].SetPosition(screen_x + (((screen_width / 2) - (passw_dialog_input_image.GetWidth() / 2)) + (18 * i)) + 2, screen_y + (screen_height / 2) + (logotype_image.GetHeight() / 2) + 75);
+		stars_array[i].SetPosition(screen_x + (((screen_width / 2) - (passw_dialog_input_image.GetWidth() / 2)) + (18 * i)) + 2, screen_y + (screen_height / 2) + (galliumos_image.GetHeight() / 2) + 75);
 		stars_n++;
 
 	}
