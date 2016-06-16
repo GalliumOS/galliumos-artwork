@@ -1,3 +1,9 @@
+galliumos-artwork (2.1) xenon; urgency=medium
+
+  * Created animated splash
+
+ -- David Muckle <dvdmuckle@galliumos.org>  Thu, 16 Jun 2016 13:35:36 -0400
+
 galliumos-artwork (2.0) xenon; urgency=medium
 
   * add image suitable for GRUB background

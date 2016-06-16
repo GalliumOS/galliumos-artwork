@@ -43,6 +43,7 @@ bpp = Window.GetBitsPerPixel();
 
 if (bpp == 4) {
 
+	logotype_image = Image("logo_16bit.png");
 	progress_meter_image = Image("progress-meter_16bit.png");
 	progress_fade_image = Image("progress-fade_16bit.png");
 	fsck_progress_meter_image = Image("progress-meter_16bit.png");
@@ -51,15 +52,12 @@ if (bpp == 4) {
 }
 else {
 
+	logotype_image = Image("logo.png");
 	progress_meter_image = Image("progress-meter.png");
 	progress_fade_image = Image("progress-fade.png");
 	fsck_progress_meter_image = Image("progress-meter.png");
 	fsck_progress_fade_image = Image("fsck-fade.png");
 	
-}
-
-for (i = 1; i < 19; i++) {
-  logotype_images[i] = Image("logo-white-animated" + i + ".png");
 }
 
 /**/
@@ -89,6 +87,8 @@ background_sprite = Sprite(scaled);
 background_sprite.SetX(screen_x + screen_width / 2 - scaled.GetWidth() / 2);
 background_sprite.SetY(screen_y + screen_height / 2 - scaled.GetHeight() / 2);
 
+for (i = 1; i < 19; i++)
+  logotype_images[i] = Image("logo-white-animated" + i + ".png");
 logotype_sprite = Sprite();
 
 fsck_progress_meter_sprite = Sprite(fsck_progress_meter_image);
