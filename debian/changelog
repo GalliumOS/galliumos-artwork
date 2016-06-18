@@ -1,3 +1,9 @@
+galliumos-artwork (2.6) xenon; urgency=medium
+
+  * Added -k all flag to postinst script
+
+ -- David Muckle <dvdmuckle@galliumos.org>  Sat, 18 Jun 2016 00:21:22 -0400
+
 galliumos-artwork (2.5) xenon; urgency=medium
 
   * Added update-initramfs in postinst
