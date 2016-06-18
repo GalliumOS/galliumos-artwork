@@ -4,5 +4,5 @@ Description=A theme that features a background with a logo.
 ModuleName=script
 
 [script]
-ImageDir=/usr/share/plymouth/themes/xubuntu-logo
+ImageDir=/usr/share/plymouth/themes/galliumos-logo
 ScriptFile=/usr/share/plymouth/themes/xubuntu-logo/xubuntu-logo.script
