@@ -1,3 +1,9 @@
+galliumos-artwork (2.5) xenon; urgency=medium
+
+  * Added update-initramfs in postinst
+
+ -- David Muckle <dvdmuckle@galliumos.org>  Sat, 18 Jun 2016 00:15:49 -0400
+
 galliumos-artwork (2.4) xenon; urgency=medium
 
   * Fixed galliumos-logo path error
