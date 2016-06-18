@@ -1,0 +1,4 @@
+#!/bin/bash
+
+update-initramfs -k all -u
+exit 0
