@@ -1,3 +1,9 @@
+galliumos-artwork (2.8) xenon; urgency=medium
+
+  * add darker trianglify image for GRUB
+
+ -- reynhout <reynhout@galliumos.org>  Mon, 23 Jan 2017 03:29:32 +0000
+
 galliumos-artwork (2.7) xenon; urgency=medium
 
   * Actually included postinst script
