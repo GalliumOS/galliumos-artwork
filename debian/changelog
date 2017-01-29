@@ -1,3 +1,9 @@
+galliumos-artwork (2.10) xenon; urgency=medium
+
+  * add custom icon for ubiquity
+
+ -- reynhout <reynhout@galliumos.org>  Sun, 29 Jan 2017 03:51:11 +0000
+
 galliumos-artwork (2.9) xenon; urgency=medium
 
   * update whisker menu icon to monochrome blue logo
