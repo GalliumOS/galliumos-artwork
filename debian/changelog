@@ -1,3 +1,9 @@
+galliumos-artwork (2.11) xenon; urgency=medium
+
+  * add solid blue for GRUB background
+
+ -- reynhout <reynhout@galliumos.org>  Mon, 30 Jan 2017 20:31:11 +0000
+
 galliumos-artwork (2.10) xenon; urgency=medium
 
   * add custom icon for ubiquity
