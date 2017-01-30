@@ -1,3 +1,9 @@
+galliumos-artwork (2.12) xenon; urgency=medium
+
+  * replace xubuntu-icon-theme, add usr/share/icons to install rules
+
+ -- reynhout <reynhout@galliumos.org>  Mon, 30 Jan 2017 21:45:31 +0000
+
 galliumos-artwork (2.11) xenon; urgency=medium
 
   * add solid blue for GRUB background
