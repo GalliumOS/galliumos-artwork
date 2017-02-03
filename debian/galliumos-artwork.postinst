@@ -1,8 +1,0 @@
-#!/bin/sh
-#
-
-if [ -r /usr/share/pixmaps/galliumos-solidblue.png ]; then
-  rm -f /boot/grub/galliumos.png
-  cp /usr/share/pixmaps/galliumos-solidblue.png /boot/grub/galliumos.png
-fi
-

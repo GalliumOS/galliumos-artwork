@@ -1,3 +1,9 @@
+galliumos-artwork (2.14) xenon; urgency=medium
+
+  * revert solidblue copy
+
+ -- reynhout <reynhout@galliumos.org>  Fri, 03 Feb 2017 22:33:47 +0000
+
 galliumos-artwork (2.13) xenon; urgency=medium
 
   * copy solidblue into /boot/grub for recalcitrant configs
