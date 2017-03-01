@@ -1,3 +1,9 @@
+galliumos-artwork (2.15) xenon; urgency=medium
+
+  * custom Ubiquity icon moved to numix-icons-galliumos pkg
+
+ -- reynhout <reynhout@galliumos.org>  Wed, 01 Mar 2017 19:18:38 +0000
+
 galliumos-artwork (2.14) xenon; urgency=medium
 
   * revert solidblue copy

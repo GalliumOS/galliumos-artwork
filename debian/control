@@ -9,7 +9,7 @@ Package: galliumos-artwork
 Architecture: all
 Depends: ${misc:Depends}, xubuntu-artwork, galliumos-wallpapers, 
  plymouth-theme-galliumos-logo, plymouth-theme-galliumos-text
-Replaces: xubuntu-artwork, xubuntu-icon-theme
+Replaces: xubuntu-artwork
 Description: GalliumOS themes and artwork
  This package contains GalliumOS themes and artwork.
 
