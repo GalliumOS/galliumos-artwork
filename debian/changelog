@@ -1,3 +1,9 @@
+galliumos-artwork (2.9901) bismuth; urgency=medium
+
+  * Prepare for GalliumOS 3.0
+
+ -- reynhout <reynhout@galliumos.org>  Sun, 06 May 2018 07:04:41 +0000
+
 galliumos-artwork (2.15) xenon; urgency=medium
 
   * custom Ubiquity icon moved to numix-icons-galliumos pkg
