@@ -1,7 +1,7 @@
 Source: galliumos-artwork
 Section: x11
 Priority: optional
-Maintainer: GalliumOS Developers <contact@galliumos.org>
+Maintainer: GalliumOS <galliumos@galliumos.org>
 Build-Depends: debhelper (>= 9)
 Standards-Version: 3.9.6
 
