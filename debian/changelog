@@ -1,6 +1,9 @@
-galliumos-artwork (2.9901) bismuth; urgency=medium
+galliumos-artwork (2.9902) bismuth; urgency=medium
 
   * Prepare for GalliumOS 3.0
+  * Update xfce4/backdrops
+    - add new images for GalliumOS 3.0
+    - rename and reorganize old images
 
  -- reynhout <reynhout@galliumos.org>  Sun, 06 May 2018 07:04:41 +0000
 
