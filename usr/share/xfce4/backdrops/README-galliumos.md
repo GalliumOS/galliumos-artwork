@@ -9,13 +9,13 @@ The default desktop background is configured in galliumos-default-settings,
 ### GalliumOS 3.0
 
 - galliumos-3.0-architectural.jpg (default)
-  - License:
-  - Copyright:
-  - Submitter: (licensor)
+  - License: CC0
+  - Copyright: Paul Detjens
+  - Submitter: github:WholeWheatBagels
 - galliumos-3.0-graymist.png
-  - License:
-  - Copyright:
-  - Submitter: (licensor)
+  - License: CC0
+  - Copyright: Jack Manning
+  - Submitter: (owner)
 
 ### GalliumOS 2.1
 
