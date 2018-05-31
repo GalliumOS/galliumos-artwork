@@ -4,7 +4,7 @@ Description=Text mode theme based on galliumos-logo theme
 ModuleName=ubuntu-text
 
 [ubuntu-text]
-title=GalliumOS 2.0
+title=GalliumOS
 black=0x000000
 white=0xffffff
 brown=0x000000
