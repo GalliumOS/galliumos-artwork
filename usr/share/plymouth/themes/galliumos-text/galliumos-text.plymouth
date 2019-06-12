@@ -1,9 +1,9 @@
 [Plymouth Theme]
 Name=GalliumOS Text
 Description=Text mode theme based on galliumos-logo theme
-ModuleName=ubuntu-text
+ModuleName=galliumos-text
 
-[ubuntu-text]
+[galliumos-text]
 title=GalliumOS
 black=0x000000
 white=0xffffff
