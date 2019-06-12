@@ -1,4 +1,14 @@
 #!/bin/bash
 
+update-alternatives --install \
+  /usr/share/plymouth/themes/default.plymouth \
+  default.plymouth \
+  /usr/share/plymouth/themes/galliumos-logo/galliumos-logo.plymouth \
+  100
+
+update-alternatives --set default.plymouth \
+  /usr/share/plymouth/themes/galliumos-logo/galliumos-logo.plymouth
+
 update-initramfs -k all -u
+
 exit 0

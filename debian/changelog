@@ -1,4 +1,4 @@
-galliumos-artwork (2.9905) bismuth; urgency=medium
+galliumos-artwork (2.9906) bismuth; urgency=medium
 
   * Prepare for GalliumOS 3.0
   * Update xfce4/backdrops
@@ -6,6 +6,7 @@ galliumos-artwork (2.9905) bismuth; urgency=medium
     - add license, copyright, and provenance for new images
     - rename and reorganize old images
   * Remove version number from plymouth text theme
+  * Update plymouth themes
 
  -- reynhout <reynhout@galliumos.org>  Sun, 06 May 2018 07:04:41 +0000
 
