@@ -204,7 +204,7 @@ fun refreshHandler() {
 		spinner = Image("spinner.png");
 		spinner = spinner.Rotate(spin);
 		spinner_sprite = Sprite(spinner);
-		spinner_sprite.SetPosition(screen_x + (screen_width / 2) - (spinner.GetWidth() / 2), screen_y + (screen_height / 2) - (spinner.GetHeight() / 2) + 360);	
+		spinner_sprite.SetPosition(screen_x + (screen_width / 2) - (spinner.GetWidth() / 2), screen_y + (screen_height / 2) - (spinner.GetHeight() / 2) + 240);
 	
 	}
 	
